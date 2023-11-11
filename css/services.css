@@ -1,0 +1,270 @@
+.headerMenu{
+    width: 95%;
+    height: 50px;
+    align-self: center;
+    display: flex;
+    border-radius: 10px;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+#Logo{
+    width: 150px;
+    height: 75px;
+}
+body{
+    background-image: url('../img/Background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.Model1{
+    background-image: url('../img/Fondo1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+}
+.Model1, .Model2{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.ImgWebSite{
+    height: 500px;
+}
+#Img4{
+    height: 500px;
+    padding-right: 3rem;
+}
+.type1{
+    text-align: center;
+    font-family: 'Martel Sans', sans-serif; 
+    font-weight: 700;
+    color: #FFFFFF;
+    padding-right: 2rem;
+}
+.type1 h1{
+    margin-top: 3rem;
+}
+.type1 p{
+    margin-top: 3rem;
+    font-size: 19px;
+    line-height: 2;
+    text-align: justify;
+}
+.Model2{
+    background-image: url('../img/Fondo2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+}
+.type2{
+    text-align: center;
+    font-family: 'Martel Sans', sans-serif; 
+    font-weight: 700;
+    color: #FFFFFF;
+    padding-left: 2rem;
+}
+.type2 h1{
+    margin-top: 3rem;
+}
+.type2 p{
+    margin-top: 3rem;
+    font-size: 17px;
+    line-height: 2;
+    text-align: justify;
+}
+.ImgWebSite2{
+    height: 400px;
+}
+#Text3{
+    font-size: 14px;
+}
+.menu{
+    margin-left: auto;
+    background-color: #16324988;
+    border-radius: 10px;
+    width: 80%;
+}
+.ListaMenu{
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+}
+#ButtonClose{
+    display: none;
+}
+
+.menu ul li {
+    margin: 0 15px;
+}
+
+.menu ul li button{
+    border-radius: 20px;
+    background-color: #F27D72;
+    border: none;
+    height: 25px;
+    font-family: 'Martel Sans', sans-serif; 
+    font-weight: 700; 
+    color: #FFFFFF;  
+}
+.menu ul li button:hover{
+    cursor: pointer;
+}
+.menu ul li a{
+    color: #FFFFFF;
+}
+
+.abrirMenu{
+    display: none;
+}
+footer{
+    background-image: url("../img/Footer.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+footer{
+    display: flex;
+}
+.footerWeb{
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+}
+.box h2, .box p, .box a{
+    color: #FFFFFF;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+}
+.box a{
+    padding: 2px 0;
+}
+.box2, .box2 a{
+    color: #FFFFFF;
+}
+.box2{
+    display: flex;
+    flex-direction: column;
+}
+.box2 a{
+    padding: 2px 0;
+    width: 200px;
+}
+.box3 a{
+    display: flex;
+    flex-direction: column;
+    color: #FFFFFF;
+    padding: 2rem 0;
+    width: 200px;
+
+}
+.Copyright{
+    color: #FFFFFF;
+    text-align: left;
+    margin-top: 4rem;
+}
+
+
+@media screen and (max-width: 550px) {
+    .menu{
+        opacity: 0;
+        visibility: hidden;
+    }
+    .menu.visible{
+        opacity: 1;
+        visibility: visible;
+    }
+    .cerrarMenu{
+        display: block;
+    }
+    .headerMenu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .headerMenu button {
+        background-color: #F27D72;
+        margin-left: auto;
+    }
+    .abrirMenu{
+        display: block;
+    }
+    .ListaMenu button{
+        display: block;
+    }
+    #ButtonClose{
+        display: flex;
+    }
+    
+    .menu{
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        right: 0;
+        padding-top: 5rem;
+        margin: 0 0;
+        align-items: end;
+        gap: 1rem;
+    }
+    .ListaMenu{
+        display: flex;
+        flex-direction: column;
+        margin-top: 55%;
+    }
+    .ListaMenu li{
+        padding-bottom: 1rem;
+    }
+
+    body{
+        background-image: url('../img/SignInResponsive.png');
+    }
+    #Logo{
+        display: none;
+    }
+    .contenedorInicioSesion{
+        background-color: transparent;
+        width: 80%;
+        height: 25rem;
+    }
+    .form input{
+        width: 80%;
+        border-color: #112E40;
+    }
+    .form button{
+        margin-top: 4rem;
+    }
+    .footer-login-card{
+        margin-top: 0%;
+    }
+  
+}
+
+@media screen and (max-width: 768px) {
+    .Model1, .Model2 {
+        height: auto; 
+        flex-direction: column; 
+    }
+    .ImgWebSite,
+    .ImgWebSite2 {
+        height: auto; 
+        max-width: 100%; 
+    }
+    .type1,
+    .type2 {
+        text-align: center;
+        padding: 0 15px;
+    }
+    .type1 h1,
+    .type2 h2 {
+        margin-top: 2rem; 
+    }
+    .type1 p,
+    .type2 p,
+    #Text3 {
+        font-size: 16px; 
+    }
+    .footerWeb {
+        grid-template-columns: 1fr; 
+    }
+}

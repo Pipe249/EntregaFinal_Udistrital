@@ -1,0 +1,105 @@
+
+
+.headerMenu{
+    width: 95%;
+    height: 50px;
+    align-self: center;
+    display: flex;
+    border-radius: 10px;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+#Logo{
+    width: 150px;
+    height: 75px;
+}
+body{
+   
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.menu{
+    margin-left: auto;
+    background-color: #16324988;
+    border-radius: 10px;
+    width: 80%;
+}
+.ListaMenu{
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+}
+#ButtonOpen{
+    display: none;
+}
+
+.menu ul li {
+    margin: 0 15px;
+}
+
+.menu ul li button{
+    border-radius: 20px;
+    background-color: #F27D72;
+    border: none;
+    height: 25px;
+    font-family: 'Martel Sans', sans-serif; 
+    font-weight: 700; 
+    color: #FFFFFF;  
+}
+.menu ul li button:hover{
+    cursor: pointer;
+}
+.menu ul li a{
+    color: #FFFFFF;
+}
+
+@media screen and (max-width: 550px) { 
+    .menu{
+        opacity: 0;
+        visibility: hidden;
+    }
+    .menu.visible{
+        opacity: 1;
+        visibility: visible;
+    }
+    .cerrarMenu{
+        display: block;
+    }
+    .headerMenu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .headerMenu button {
+        background-color: #F27D72;
+        margin-left: auto;
+    }
+    .abrirMenu{
+        display: block;
+    }
+    .ListaMenu button{
+        display: block;
+    }
+    #ButtonClose{
+        display: flex;
+    }
+    
+    .menu{
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        right: 0;
+        padding-top: 5rem;
+        margin: 0 0;
+        align-items: end;
+        gap: 1rem;
+    }
+    .ListaMenu{
+        display: flex;
+        flex-direction: column;
+        margin-top: 55%;
+    }
+    .ListaMenu li{
+        padding-bottom: 1rem;
+    }
+}

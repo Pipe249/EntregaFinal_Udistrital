@@ -1,0 +1,102 @@
+body{
+    background-color: floralwhite;
+}
+.cerrarMenu{
+    display: none;
+}
+.azul{
+    color: blue;
+    font-size: xx-large;
+}
+.rojo{
+    color: red;
+    font-size: xx-large;
+}
+.punto4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#punto5{
+    display: flex;
+    align-items: center;
+}
+#punto5 .p1 {
+    color: green;
+    text-decoration: underline;
+}
+#punto5 .p2 {
+    color: red;
+    font-weight: bold;
+}
+#punto5 .p3{
+    text-decoration: underline overline;
+}
+#punto5 .p4{
+    font-size: 30px;
+    font-weight: bold;
+}
+#punto5 .p5{
+    color: blue;
+}
+#punto5 .p6{
+    text-decoration: underline;
+    color: red;
+    font-weight: bold;
+}
+.marca {
+    text-decoration: underline;
+    color: yellow;
+    font-size: 30px;
+}
+.marca:hover{
+    color: aqua;
+}
+.AS:hover{
+    color: black;
+}
+.AS {
+    text-decoration: underline;
+    color: purple;
+    font-size: 30px;
+}
+#punto6{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.nav{
+    background-color: rgb(212, 124, 212);
+    align-items: center;
+    width: 50%;
+}
+.nav ul {
+    display: flex;
+}
+.nav ul li {
+    list-style: none;
+    padding: 3rem;
+    border-radius: 15px;
+    color:blanchedalmond;
+}
+
+.nav ul li:hover {
+    background-color: rgb(66, 24, 106);
+    cursor: pointer;
+}
+.pto8 table {
+    background-color: yellow;
+    border: 1px dotted black;
+}
+.pto8 table th{
+    border: none;
+    color: red;
+    font-style: italic;
+}
+.pto8 table th::first-letter{
+    font-weight: bold;
+}
+.pto8 table td{
+    border: 1px dotted black;
+    padding: 0;
+}

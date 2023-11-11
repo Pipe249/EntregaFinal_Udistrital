@@ -1,0 +1,46 @@
+.headerMenu{
+    width: 95%;
+    height: 50px;
+    align-self: center;
+    display: flex;
+    border-radius: 10px;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+#Logo{
+    width: 150px;
+    height: 75px;
+}
+.menu{
+    margin-left: auto;
+    background-color: #16324988;
+    border-radius: 10px;
+    width: 80%;
+}
+.ListaMenu{
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+}
+#ButtonClose{
+    display: none;
+}
+.menu ul li {
+    margin: 0 15px;
+}
+
+.menu ul li button{
+    border-radius: 20px;
+    background-color: #F27D72;
+    border: none;
+    height: 25px;
+    font-family: 'Martel Sans', sans-serif; 
+    font-weight: 700; 
+    color: #FFFFFF;  
+}
+.menu ul li button:hover{
+    cursor: pointer;
+}
+.menu ul li a{
+    color: #FFFFFF;
+}
